@@ -4,8 +4,7 @@ This is a package for generating sine signals and sum sines into one multisine s
 
 Create a new SignalGenerator.
 
-sampling frequency: 44.1 kHz
-signal duration: 2 seconds
+sampling frequency: 44.1 kHz, signal duration: 2 seconds
 
 ```go
 sg := multisine.NewSignalGenerator(44100, 2)
@@ -13,9 +12,7 @@ sg := multisine.NewSignalGenerator(44100, 2)
 
 Generate a sine.
 
-sine frequency: 1 kHz
-amplitude: 2 (no unit)
-phase: 180 deg
+sine frequency: 1 kHz, amplitude: 2 (no unit), phase: 180 deg
 ```go
 sg.GenerateSine(1000, 2, 180)
 ```
