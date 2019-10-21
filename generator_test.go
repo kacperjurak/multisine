@@ -59,11 +59,3 @@ func TestMultisine(t *testing.T) {
 		t.Errorf("Wrong multisine generated")
 	}
 }
-func TestMultisine1(t *testing.T) {
-	var sines []multisine.Sine = make([]multisine.Sine, 3)
-	sg := multisine.NewSignalGenerator(65536, 1)
-	sines[0] = sg.GenerateSine(1000, 1, 0)
-	sines[1] = sg.GenerateSine(100, 0.5, 90)
-	sines[2] = sg.GenerateSine(10, 0.7, 270)
-	sg.GenerateMultisine(sines)
-}
